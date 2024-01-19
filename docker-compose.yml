@@ -1,8 +1,7 @@
 version: "3.8"
 services:
   palworld:
-    user:
-    - "1000:1000"
+    user: "1000"
     image: steamcmd/steamcmd
     volumes:
     - "./data:/data"
