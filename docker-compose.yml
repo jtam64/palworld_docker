@@ -1,8 +1,10 @@
-version: "3.0"
+version: "3.8"
 services:
   palworld:
     image: steamcmd/steamcmd
     volumes:
     - "./data:/data"
     - "./palworld_run.sh:/palworld_run.sh"
-    # command: ["cd /" + "./palworld_run.sh"]
+    ports:
+    - "8221:8221"
+    command: ["cd /", "./palworld_run.sh"]
