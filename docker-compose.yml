@@ -1,7 +1,7 @@
 version: "3.0"
 services:
   palworld:
-    image: steamcmd
+    image: steamcmd/steamcmd
     volumes:
     - "./data:~/data"
     - "./palworld_run.sh:~/palworld_run.sh"
