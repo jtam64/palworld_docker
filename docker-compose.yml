@@ -8,5 +8,4 @@ services:
     ports:
     - "8221:8221"
     command: >
-      sh -c "chmod +x palworld_run.sh && 
-      ./palworld_run.sh"
+      sh -c "./palworld_run.sh"
